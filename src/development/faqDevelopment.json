@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "¿Cuál es la edad mínima para tatuarse? ¿Necesito un permiso de mis padres si soy menor?",
+    "description": "Cómo edad mínima legal son los 18 años, los menores pueden tatuarse siempre que vengan acompañados por uno de sus padres, identificados ambos con el DNI en vigor y el Libro de Familia, tendrán que firmar una autorización expresa junto al consentimiento informado obligatorio por ley."
+  },
+  {
+    "id": 2,
+    "title": "¿Qué tipo de materiales utilizan? ¿y las tintas?",
+    "description": "Los materiales que se utilizan en matasuegras son de primera calidad, las agujas y grips son estériles, desechables y de un sólo uso, al igual que el resto del material necesario para la realización del tatuaje; en nuestro estudio no tenemos autoclave, con lo cuál no esterilizamos material, todo viene directamente esterilizado desde el distribuidor, y se abre delante del cliente, conforme a la legislación vigente. Las tintas utilizadas son las homologadas y permitidas por Sanidad de la Comunidad de Madrid."
+  },
+  {
+    "id": 3,
+    "title": "¿Cuánto tiempo antes tengo que agendar un turno? ¿Tengo que dejar alguna seña para confirmar el turno?",
+    "description": "Los turnos se agendan con 2 semanas de anticipacion. Se debe abonar la mitad el precio para reservar el turno."
+  },
+  {
+    "id": 4,
+    "title": "¿Suministran alguna anestesia o alguna crema para el dolor?",
+    "description": "No, no disponemos, ni suministramos ningún tipo de anestesia."
+  },
+  {
+    "id": 5,
+    "title": "¿Puedo beber alcohol antes o despues de tatuarme?",
+    "description": "No, no puedes beber antes, ni inmediatamente después de tatuarte. Beber alcohol puede afectar en tu toma de decisiones, no provocará una disminución del dolor, aumentará el sangrado e influirá en el acabado del tatuaje y su cicatrización."
+  },
+  {
+    "id": 6,
+    "title": "¿Qué pasa si cancelo la cita? ¿Me devuelven la plata?",
+    "description": "La cita se puede cancelar hasta 48hs antes del turno y se devuelve lo abonado en la seña."
+  }
+]

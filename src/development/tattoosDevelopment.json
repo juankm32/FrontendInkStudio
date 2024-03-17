@@ -1,0 +1,122 @@
+[
+  {
+    "id": "65de69638aac532157aef385",
+    "styleId": "65de680aa125052823466e02",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "isDeleted": false,
+    "title": "Bette Middleton",
+    "dateTime": "2012-08-12T17:38:26.265Z",
+    "description": "Ea dolore laboris incididunt duis aute elit amet ut nisi ut pariatur elit cupidatat.",
+    "image": "/images/back1_test.jpg"
+  },
+  {
+    "id": "65de6963ae013eb7762109ed",
+    "styleId": "65de680aa125052823466e02",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "isDeleted": false,
+    "title": "Cabrera Morrow",
+    "dateTime": "1982-03-07T23:48:02.030Z",
+    "description": "Sit quis aliquip amet officia ipsum do.",
+    "image": "/images/back2_test.jpg"
+  },
+  {
+    "id": "65de69633f16cb5d9168a999",
+    "styleId": "65de680a4fabe7a7ae97c40c",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "isDeleted": true,
+    "title": "Barlow Livingston",
+    "dateTime": "1998-04-03T09:48:29.562Z",
+    "description": "Irure labore ullamco deserunt occaecat adipisicing ut aute ad tempor deserunt.",
+    "image": "/images/back3_test.jpg"
+  },
+  {
+    "id": "65de69635ed0c41e91b2d3b1",
+    "styleId": "65de680a4fabe7a7ae97c40c",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "isDeleted": false,
+    "title": "Mcdowell Barton",
+    "dateTime": "1991-03-03T04:54:13.719Z",
+    "description": "Qui cupidatat nisi labore proident incididunt nostrud ex reprehenderit Lorem aute consectetur commodo.",
+    "image": "/images/back4_test.jpg"
+  },
+  {
+    "id": "65de6963b0dc6a17c1139f7a",
+    "styleId": "65de680a6db12cedab811679",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "isDeleted": false,
+    "title": "Celia Hopkins",
+    "dateTime": "2021-03-20T23:26:24.409Z",
+    "description": "Aute in occaecat fugiat sunt officia occaecat nisi.",
+    "image": "/images/arm1_test.jpg"
+  },
+  {
+    "id": "65de6963670a6b4447ccd5b0",
+    "styleId": "65de680a6db12cedab811679",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "isDeleted": true,
+    "title": "Beatriz Fowler",
+    "dateTime": "2002-05-15T20:33:27.398Z",
+    "description": "Lorem velit anim exercitation do sint reprehenderit consequat reprehenderit labore eiusmod et.",
+    "image": "/images/arm2_test.png"
+  },
+  {
+    "id": "235235234234234234234",
+    "styleId": "65de680aa125052823466e02",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "title": "Bette Middleton",
+    "dateTime": "2012-08-12T17:38:26.265Z",
+    "isDeleted": false,
+    "description": "Ea dolore laboris incididunt duis aute elit amet ut nisi ut pariatur elit cupidatat.",
+    "image": "/images/arm3_test.jpg"
+  },
+  {
+    "id": "43523423423423454635",
+    "styleId": "65de680aa125052823466e02",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "title": "Cabrera Morrow",
+    "dateTime": "1982-03-07T23:48:02.030Z",
+    "isDeleted": false,
+    "description": "Sit quis aliquip amet officia ipsum do.",
+    "image": "/images/arm4_test.png"
+  },
+  {
+    "id": "625436345345345345",
+    "styleId": "65de680aa125052823466e02",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "title": "Barlow Livingston",
+    "dateTime": "1998-04-03T09:48:29.562Z",
+    "isDeleted": true,
+    "description": "Irure labore ullamco deserunt occaecat adipisicing ut aute ad tempor deserunt.",
+    "image": "/images/legs1_test.jpg"
+  },
+  {
+    "id": "23524325234234235332",
+    "styleId": "65de680aa125052823466e02",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "title": "Mcdowell Barton",
+    "dateTime": "1991-03-03T04:54:13.719Z",
+    "isDeleted": false,
+    "description": "Qui cupidatat nisi labore proident incididunt nostrud ex reprehenderit Lorem aute consectetur commodo.",
+    "image": "/images/legs2_test.jpg"
+  },
+  {
+    "id": "23523624234234234",
+    "styleId": "65de680aa125052823466e02",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "title": "Celia Hopkins",
+    "dateTime": "2021-03-20T23:26:24.409Z",
+    "isDeleted": false,
+    "description": "Aute in occaecat fugiat sunt officia occaecat nisi.",
+    "image": "/images/legs3_test.jpg"
+  },
+  {
+    "id": "2356243523423423423",
+    "styleId": "65de680aa125052823466e02",
+    "artistId": "65d90a1dcee83cfacb9747c5",
+    "title": "Beatriz Fowler",
+    "dateTime": "2002-05-15T20:33:27.398Z",
+    "isDeleted": true,
+    "description": "Lorem velit anim exercitation do sint reprehenderit consequat reprehenderit labore eiusmod et.",
+    "image": "/images/back1_test.jpg"
+  }
+]

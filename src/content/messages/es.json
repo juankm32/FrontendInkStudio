@@ -1,0 +1,222 @@
+{
+  "Metadata": {
+    "title": "Ink Studio | "
+  },
+  "header": {
+    "buttons": {
+      "login": "Iniciar sesión",
+      "register": "Crear cuenta",
+      "myAccount": "Mi cuenta",
+      "myStudio": "Mi estudio",
+      "artists": "Artistas",
+      "clients": "Clientes",
+      "categories": "Categorías",
+      "studioAgende": "Agenda estudio",
+      "studioReports": "Reportes estudio",
+      "closeSession": "Cerrar sesión"
+    },
+    "navigation": {
+      "home": "Inicio",
+      "artists": "Artistas",
+      "gallery": "Galería",
+      "caring": "Cuidados",
+      "contact": "Contacto"
+    }
+  },
+  "footer": {
+    "location": {
+      "title": "Ubicación",
+      "description": "Av. Raúl Scalabrini Ortíz 3036, Ciudad Autónoma Buenos Aires, Argentina"
+    },
+    "openingHours": {
+      "title": "Horario de atención",
+      "description": "Lun - Dom: 11:00 - 20:00 Hrs"
+    },
+    "navigation": {
+      "whoWeAre": "Quienes somos",
+      "contact": "Contacto",
+      "privacyPolitics": "Políticas de privacidad",
+      "termsAndConditions": "Términos y condiciones"
+    },
+    "faq": {
+      "title": "FAQS",
+      "faqs": "Preguntas frecuentes"
+    },
+    "copyright": "© 2024 | Todos los derechos reservados",
+    "love": "Creado con amor por el EQUIPO 3"
+  },
+  "home": {
+    "metadata": {
+      "title": "Inicio"
+    },
+    "page": {
+      "carrousel": {
+        "description": {
+          "viewMore": "Ver mas información"
+        }
+      },
+      "gallery": {
+        "title": "Galería",
+        "viewMore": "Ver mas"
+      }
+    }
+  },
+  "login": {
+    "metadata": {
+      "title": "Iniciar sesión"
+    },
+    "page": {
+      "title": "Iniciar sesión",
+      "form": {
+        "fields": {
+          "email": "Email",
+          "password": "Contraseña"
+        },
+        "errors": {
+          "unknownError": "Se produjo un error, por favor inténtelo mas tarde",
+          "required": "Este campo es requerido",
+          "invalidEmail": "Email no valido",
+          "invalidPassword": "Contraseña debe incluir caracteres especiales",
+          "minLength": {
+            "start": "Debe tener un mínimo de",
+            "end": "caracteres"
+          },
+          "maxLength": {
+            "start": "Debe tener un máximo de",
+            "end": "caracteres"
+          }
+        },
+        "submit": "Confirmar"
+      },
+      "forgotPassword": "Olvide mi contraseña",
+      "noAccount": {
+        "label": "¿No tienes cuenta?",
+        "linkLabel": "Crear una cuenta"
+      }
+    }
+  },
+  "register": {
+    "metadata": {
+      "title": "Crear cuenta"
+    },
+    "page": {
+      "title": "Crear cuenta",
+      "form": {
+        "fields": {
+          "firstName": "Nombre",
+          "lastName": "Apellido",
+          "birthDate": "Fecha de Nacimiento",
+          "email": "Email",
+          "telephone": "Numero de Teléfono",
+          "password": "Contraseña",
+          "confirmPassword": "Confirmar Contraseña"
+        },
+        "errors": {
+          "unknownError": "Se produjo un error, por favor inténtelo mas tarde",
+          "alreadyExists": "Este email ya esta registrado",
+          "required": "Este campo es requerido",
+          "invalidEmail": "Email no valido",
+          "invalidDate": "Fecha no valida",
+          "invalidPassword": "Contraseña debe incluir caracteres especiales",
+          "invalidPasswords": "Las contraseñas no coinciden",
+          "invalidTelephone": "Numero de teléfono invalido",
+          "notOldEnough": "No tienes suficiente edad",
+          "minLength": {
+            "start": "Debe tener un mínimo de",
+            "end": "caracteres"
+          },
+          "maxLength": {
+            "start": "Debe tener un máximo de",
+            "end": "caracteres"
+          }
+        },
+        "success": {
+          "title": "¡Estas a un paso de crear tu cuenta!",
+          "description": "Te hemos enviado un mail a tu correo introducido"
+        },
+        "submit": "Confirmar"
+      },
+      "registerWith": "Registrarse a través de",
+      "haveAccount": {
+        "label": "¿Ya tienes una cuenta?",
+        "linkLabel": "Iniciar Sesión"
+      }
+    }
+  },
+  "artists": {
+    "metadata": {
+      "title": "Artistas"
+    },
+    "page": {
+      "title": "Conoce a nuestros artistas"
+    }
+  },
+  "privacyPolicy": {
+    "metadata": {
+      "title": "Política de Privacidad"
+    },
+    "page": {
+      "title": "Política de Privacidad",
+      "content": "Aquí puedes encontrar información sobre nuestras prácticas de privacidad..."
+    }
+  },
+  "gallery": {
+    "metadata": {
+      "title": "Galería"
+    },
+    "page": {
+      "title": "Galería",
+      "filters": {
+        "clearAll": "Limpiar",
+        "styles": {
+          "title": "Estilos"
+        },
+        "artists": {
+          "title": "Artistas"
+        },
+        "bodyParts": {
+          "title": "Partes del cuerpo",
+          "back": "Espalda",
+          "arms": "Brazos",
+          "legs": "Piernas"
+        }
+      }
+    }
+  },
+  "artist": {
+    "page": {
+      "nav": {
+        "publications": "Publicaciones",
+        "gallery": "Galería",
+        "scheduleAppointment": "Agendar cita"
+      }
+    }
+  },
+  "termsAndConditions": {
+    "metadata": {
+      "title": "Terminos y Condiciones"
+    },
+    "page": {
+      "title": "Terminos y Condiciones",
+      "content": "Aquí puedes encontrar información sobre nuestros terminos y condiciones..."
+    }
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contacto"
+    },
+    "page": {
+      "title": "Contacto",
+      "content": "Aquí puedes encontrar información de contacto..."
+    }
+  },
+  "faq": {
+    "metadata": {
+      "title": "FAQS"
+    },
+    "page": {
+      "title": "FAQS",
+      "content": "Aquí puedes encontrar información de FAQS"
+    }
+  }
+}

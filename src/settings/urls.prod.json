@@ -1,0 +1,25 @@
+{
+  "domain": "https://proyecto-integrador2-alpha.vercel.app",
+  "api": {
+    "base": "http://34.207.55.29:8080/api/v1",
+    "auth": {
+      "base": "/authentications",
+      "register": "/register",
+      "login": "/login"
+    },
+    "users": {
+      "base": "/users",
+      "byToken": "/get-token",
+      "designers": "/designers",
+      "clients": "/clients"
+    },
+    "tattoos": {
+      "base": "/tattoos",
+      "byBodyPart": "/body-parts",
+      "byStyle": "/styles"
+    },
+    "styles": {
+      "base": "/styles"
+    }
+  }
+}

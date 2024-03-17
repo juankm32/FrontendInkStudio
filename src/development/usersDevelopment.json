@@ -1,0 +1,104 @@
+[
+  {
+    "id": "65d90a1dcee83cfacb9747c5",
+    "isDeleted": false,
+    "firstName": "Perry",
+    "lastName": "Maxwell",
+    "email": "perryMaxwell@mail.com",
+    "emailVerified": false,
+    "phone": "+667 99 976 114",
+    "age": "2011-07-16T22:12:44.837Z",
+    "image": "/images/image_test1.jpg",
+    "biography": "Ipsum in ex laboris duis aliqua tempor dolore et fugiat exercitation ex labore nisi nostrud. Incididunt reprehenderit ea culpa exercitation deserunt ipsum pariatur sit aliqua tempor mollit laborum magna.",
+    "styles": [
+      "65de680aa125052823466e02",
+      "65de680a4fabe7a7ae97c40c",
+      "65de680a6db12cedab811679"
+    ]
+  },
+  {
+    "id": "65d90a1d590bfbd089f0b631",
+    "isDeleted": true,
+    "firstName": "Mack",
+    "lastName": "Sparks",
+    "email": "mackSparks@mail.com",
+    "emailVerified": true,
+    "phone": "+962 65 869 260",
+    "age": "2012-03-30T20:20:26.054Z",
+    "image": "/images/image_test2.jpg",
+    "biography": "Ipsum in ex laboris duis aliqua tempor dolore et fugiat exercitation ex labore nisi nostrud. Incididunt reprehenderit ea culpa exercitation deserunt ipsum pariatur sit aliqua tempor mollit laborum magna.",
+    "styles": [
+      "65de680aa125052823466e02",
+      "65de680a4fabe7a7ae97c40c",
+      "65de680a6db12cedab811679"
+    ]
+  },
+  {
+    "id": "65d90a1ddd4980bc3488c685",
+    "isDeleted": false,
+    "firstName": "Jordan",
+    "lastName": "Christensen",
+    "email": "jordanChristensen@mail.com",
+    "emailVerified": true,
+    "phone": "+477 37 594 604",
+    "age": "2012-07-04T02:45:21.666Z",
+    "image": "/images/image_test3.jpg",
+    "biography": "Ipsum in ex laboris duis aliqua tempor dolore et fugiat exercitation ex labore nisi nostrud. Incididunt reprehenderit ea culpa exercitation deserunt ipsum pariatur sit aliqua tempor mollit laborum magna.",
+    "styles": [
+      "65de680aa125052823466e02",
+      "65de680a4fabe7a7ae97c40c",
+      "65de680a6db12cedab811679"
+    ]
+  },
+  {
+    "id": "65d90a1d2c959b415a1d9aff",
+    "isDeleted": true,
+    "firstName": "Britney",
+    "lastName": "Reed",
+    "email": "britneyReed@mail.com",
+    "emailVerified": false,
+    "phone": "+377 10 987 548",
+    "age": "2011-07-29T02:08:40.691Z",
+    "image": "/images/image_test4.jpg",
+    "biography": "Dolor dolor et ea reprehenderit anim cupidatat voluptate ad. Sit officia proident enim officia adipisicing quis ea dolor non aliqua esse ea.",
+    "styles": [
+      "65de680aa125052823466e02",
+      "65de680a4fabe7a7ae97c40c",
+      "65de680a6db12cedab811679"
+    ]
+  },
+  {
+    "id": "65d90a1da0866a457eb166a9",
+    "isDeleted": false,
+    "firstName": "Tracey",
+    "lastName": "Roy",
+    "email": "traceyRoy@mail.com",
+    "emailVerified": true,
+    "phone": "+979 62 196 280",
+    "age": "2012-12-25T01:14:16.378Z",
+    "image": "/images/image_test1.jpg",
+    "biography": "Ipsum in ex laboris duis aliqua tempor dolore et fugiat exercitation ex labore nisi nostrud. Incididunt reprehenderit ea culpa exercitation deserunt ipsum pariatur sit aliqua tempor mollit laborum magna.",
+    "styles": [
+      "65de680aa125052823466e02",
+      "65de680a4fabe7a7ae97c40c",
+      "65de680a6db12cedab811679"
+    ]
+  },
+  {
+    "id": "65d90a1dd2c5b83c6440a1cc",
+    "isDeleted": true,
+    "firstName": "Randi",
+    "lastName": "Morrison",
+    "email": "randiMorrison@mail.com",
+    "emailVerified": false,
+    "phone": "+686 49 857 607",
+    "age": "2013-04-05T23:51:21.408Z",
+    "image": "/images/image_test2.jpg",
+    "biography": "Ipsum in ex laboris duis aliqua tempor dolore et fugiat exercitation ex labore nisi nostrud. Incididunt reprehenderit ea culpa exercitation deserunt ipsum pariatur sit aliqua tempor mollit laborum magna.",
+    "styles": [
+      "65de680aa125052823466e02",
+      "65de680a4fabe7a7ae97c40c",
+      "65de680a6db12cedab811679"
+    ]
+  }
+]

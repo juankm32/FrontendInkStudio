@@ -1,0 +1,17 @@
+[
+  {
+    "id": "65de680aa125052823466e02",
+    "name": "back",
+    "isDeleted": false
+  },
+  {
+    "id": "65de680a4fabe7a7ae97c40c",
+    "name": "arms",
+    "isDeleted": false
+  },
+  {
+    "id": "65de680a6db12cedab811679",
+    "name": "legs",
+    "isDeleted": false
+  }
+]
