@@ -1,9 +1,8 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import GoogleMap from "@/components/ui/GoogleMap";
+import { btnAccentColors, btnSm } from "@/utils";
 import type { NextPage } from "next";
 import type { ContactContent } from "../../../content/functions/types";
-import GoogleMap from "@/components/ui/GoogleMap";
-import { btnAccentColors, btnSm, transparentBg } from "@/utils";
 
 const ContactPage: NextPage = () => {
   const contactContent: ContactContent = {
@@ -165,12 +164,20 @@ const ContactPage: NextPage = () => {
                     placeholder={contactContent.form.messagePlaceholder}
                   ></textarea>
                 </div>
-                <p>Tenés un tatuaje para cotizar? leé las {" "} 
-                  <a href="/Faq" className="text-blue-600">FAQS
-                  </a> 
-                  {" "} Adjuntar archivo...</p>
+                <p>
+                  Tenés un tatuaje para cotizar? leé las{" "}
+                  <a href="/Faq" className="text-blue-600">
+                    FAQS
+                  </a>{" "}
+                  Adjuntar archivo...
+                </p>
                 <br />
-                <p>Querés hacer una reserva? {" "} <a href="/reservas" className="text-blue-600">Ir a Reservas</a></p>
+                <p>
+                  Querés hacer una reserva?{" "}
+                  <a href="/reservas" className="text-blue-600">
+                    Ir a Reservas
+                  </a>
+                </p>
                 <div className="flex justify-between mt-8 p-8">
                   <button
                     className={`${btnAccentColors} ${btnSm} uppercase font-bold `}

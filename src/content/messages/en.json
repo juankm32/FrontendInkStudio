@@ -75,7 +75,7 @@
         "errors": {
           "unknownError": "An unexpected error has occurred, please try later",
           "required": "This field is required",
-          "invalidPassword": "Password must contain special characters",
+          "invalidPassword": "Password must contain one special character, one number and one letter",
           "invalidEmail": "Email is not valid",
           "minLength": {
             "start": "Must have a minimum of",
@@ -117,7 +117,7 @@
           "required": "This field is required",
           "invalidEmail": "Email is not valid",
           "invalidDate": "Invalid date",
-          "invalidPassword": "Password must contain special characters",
+          "invalidPassword": "Password must contain one special character, one number and one letter",
           "invalidPasswords": "Passwords don't match",
           "invalidTelephone": "Invalid telephone number",
           "notOldEnough": "You are not old enough",
@@ -180,6 +180,9 @@
           "arms": "Arms",
           "legs": "Legs"
         }
+      },
+      "modal": {
+        "by": "By"
       }
     }
   },
@@ -189,6 +192,9 @@
         "publications": "Publications",
         "gallery": "Gallery",
         "scheduleAppointment": "Schedule appointment"
+      },
+      "publication": {
+        "by": "By"
       }
     }
   },
@@ -217,6 +223,32 @@
     "page": {
       "title": "FAQS",
       "content": "Here you can find the FAQS"
+    }
+  },
+  "appointment": {
+    "metadata": {
+      "title": "Schedule Appointment"
+    },
+    "page": {
+      "title": "Schedule Appointment",
+      "steps": {
+        "service": "Service",
+        "style": "Style",
+        "artist": "Artist",
+        "date": "Date",
+        "hour": "Hour",
+        "reserve": "Reserve"
+      },
+      "form": {
+        "fields": {
+          "service": {
+            "design": "Design with artist",
+            "session": "Session with artist",
+            "submit": "Reserve",
+            "moreInfo": "More info about reserve"
+          }
+        }
+      }
     }
   }
 }

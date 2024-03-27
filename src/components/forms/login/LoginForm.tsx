@@ -10,7 +10,7 @@ import { btnAccentColors, btnSm, getData, postData } from "@/utils";
 import { FETCH_STATUS, handleStatusMessage } from "@/utils/dataFetch/status";
 import type { StatusMessages } from "@/utils/dataFetch/types";
 import { setCookie } from "@/utils/server";
-import { TextInput } from "@nico2433/custom-inputs";
+import { TextInput } from "@nico2433/custom-components";
 import { useRouter } from "next/navigation";
 import { useState, type FC } from "react";
 import type { FieldValues } from "react-hook-form";
@@ -80,7 +80,7 @@ const LoginForm: FC<Props> = ({ content }) => {
             register={register}
             errors={errors}
             className="text-center uppercase font-bold w-full"
-            inputClassName="p-2 bg-gray-200 rounded-md w-full text-black"
+            inputClass="p-2 bg-gray-200 rounded-md w-full text-black"
           />
         ))}
         {status !== FETCH_STATUS.INACTIVE &&

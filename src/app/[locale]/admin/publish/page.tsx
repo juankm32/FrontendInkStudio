@@ -1,57 +1,31 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import type { NextPage } from "next";
-import type { ContactContent } from "../../../../content/functions/types";
-import GoogleMap from "@/components/ui/GoogleMap";
-import { btnAccentColors, btnSm, transparentBg } from "@/utils";
-import Separator from "@/components/ui/Separator";
-import GradientBorder from "@/components/ui/GradientBorder";
+import React, { useState } from "react";
+import PendingPublishCard from "@/components/cards/PendingPublish";
 import AdminCard from "@/components/cards/adminCard";
-import LocationIcon from "@/components/icons/LocationIcon";
-import CalendarIcon from "@/components/icons/CalendarIcon";
-import ReportIcon from "@/components/icons/ReportIcon";
 import PlusCircleIcon from "@/components/icons/PlusCircleIcon";
-import ChevronRightIcon from "@/components/icons/ChevronRightIcon";
-import Link from "next/link";
-import ArtistCard from "@/components/cards/ArtistCard";
 import DocDelimiter from "@/components/ui/DocDelimiter";
-import { usersDevelopment } from "@/development";
+import Separator from "@/components/ui/Separator";
+import type { NextPage } from "next";
+import Link from "next/link";
+import { urls } from "@/settings";
+import { getData } from "@/utils";
+import type { TattooSchema } from "@/settings/@types/schema/Tattoo";
+
+const { api } = urls;
 
 
-const AdminArtistPage: NextPage = () => {
-  const contactContent: ContactContent = {
-    location: {
-      title: "Direccion",
-      description: "JUAN RAMIREZ DE VELASCO 781, CABA",
-    },
-    openingHours: {
-      title: "Horarios",
-      description: "Lunes a Sábado de 11 a 20 hs",
-    },
-    phone: {
-      title: "Telefono",
-      description: "+541122510990  |  46758909 ",
-    },
-    email: {
-      title: "Email",
-      description: "info@inkstudio.com ",
-    },
-    form: {
-      namePlaceholder: "Nombre",
-      lastNamePlaceHolder: "Apellido",
-      emailPlaceholder: "Email",
-      phonePlaceholder: "Número de Teléfono",
-      messagePlaceholder: "Mensaje",
-      sendButton: "Enviar",
-      cancelButton: "Cancelar",
-    },
-  };
-
+const AdminPublishPage: NextPage = async () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const url = `${api.base}${api.tattoos.base}${api.tattoos.unconfirmed}`;
+
+  const tattoos =
+    (await getData<TattooSchema[]>(url).catch(console.error)) || [];
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
+
 
   return (
     <div className="min-h-screen p-4 flex justify-center items-center">
@@ -87,7 +61,7 @@ const AdminArtistPage: NextPage = () => {
         <div className="header-container bg-secondary-background shadow-lg mt-6 mx-auto w-1/2">
           <ul className="flex flex-row justify-between header-list list-none p-0 m-0 text-white">
             <li className="header-item flex justify-between items-center rounded py-2 px-4">
-              <Link href={`/es/admin/artist`} legacyBehavior>
+              <Link href={`/es/admin/publish/published`} legacyBehavior>
                 <a className="hover:text-gray-300  flex justify-between items-center font-bold ">
                   PUBLICADAS
                 </a>
@@ -114,17 +88,19 @@ const AdminArtistPage: NextPage = () => {
             ></AdminCard>
           </div>
 
+          
           <DocDelimiter
             as="section"
             containerClassName="flex flex-col gap-10 mt-8"
           >
-            <h1>Falta logica para publicaciones</h1>
+            {tattoos.map((tattoo) => (
+              <PendingPublishCard key={tattoo.id} tattoo={tattoo} />
+            ))}
           </DocDelimiter>
         </div>
       </div>
-
     </div>
   );
 };
 
-export default AdminArtistPage;
+export default AdminPublishPage;

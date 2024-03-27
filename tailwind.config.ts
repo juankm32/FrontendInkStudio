@@ -40,6 +40,10 @@ const config: Config = {
         "1/2": percentages["1/2"],
       },
       // *-------------- HEIGHT
+      height: {
+        100: sizes[100],
+        semiScreen: "70vh",
+      },
       maxHeight: {
         "1/6": percentages["1/6"],
         "1/5": percentages["1/5"],
@@ -48,8 +52,6 @@ const config: Config = {
         "1/2": percentages["1/2"],
         "2/3": percentages["2/3"],
         "3/4": percentages["3/4"],
-      },
-      height: {
         semiScreen: "70vh",
       },
       // *-------------- WIDTH

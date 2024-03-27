@@ -1,9 +1,12 @@
+import GalleryCard from "@/components/cards/GalleryCard";
 import DocDelimiter from "@/components/ui/DocDelimiter";
-import { tattoosDevelopment } from "@/development";
-import { filterOnArray } from "@/lib";
-import Image from "next/image";
+import { urls } from "@/settings";
+import type { TattooSchema } from "@/settings/@types";
+import { getData } from "@/utils";
 import Link from "next/link";
 import type { FC } from "react";
+
+const { api } = urls;
 
 interface Props {
   params: {
@@ -12,28 +15,24 @@ interface Props {
   };
 }
 
-const ArtistGalleryPage: FC<Props> = ({ params: { id, locale } }) => {
-  const images = filterOnArray(tattoosDevelopment, {
-    property: "artistId",
-    value: id,
-  });
+const ArtistGalleryPage: FC<Props> = async ({ params: { id, locale } }) => {
+  const tattoos =
+    (await getData<TattooSchema[]>(
+      `${api.base}${api.tattoos.base}${api.tattoos.byUser}/${id}`
+    ).catch(console.error)) || [];
 
   return (
     <DocDelimiter
       as="section"
       containerClassName="flex flex-wrap items-center justify-center gap-5"
     >
-      {images.map(({ id, title, image }) => (
-        <Link key={id} href={`/${locale}/publication/${id}`}>
-          <Image
-            src={image}
-            alt={title}
-            width={250}
-            height={500}
-            className="w-fit object-cover rounded-xl"
-          />
-        </Link>
-      ))}
+      {tattoos.map((tattoo) =>
+        [tattoo.cover, ...tattoo.images].map(({ id, name, url }) => (
+          <Link key={id} href={`/${locale}/publication/${tattoo.id}`}>
+            <GalleryCard title={name} src={url ?? ""} />
+          </Link>
+        ))
+      )}
     </DocDelimiter>
   );
 };

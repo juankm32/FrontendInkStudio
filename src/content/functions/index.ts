@@ -1,3 +1,4 @@
+export * from "./appointment";
 export * from "./artists";
 export * from "./footer";
 export * from "./gallery";

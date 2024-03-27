@@ -1,5 +1,3 @@
-import { stylesDevelopment } from "@/development";
-import { findOnArray } from "@/lib";
 import type { UserSchema } from "@/settings/@types";
 import { tertiaryTitle } from "@/utils";
 import Image from "next/image";
@@ -22,7 +20,7 @@ const ArtistCard: FC<Props> = ({
   mainTitle,
   as = "article",
 }) => {
-  const { id, firstName, lastName, image, biography, styles } = artist;
+  const { id, name, lastname, profile, biography, styles } = artist;
 
   const ContainerComponent = hover ? Link : "div";
   const Title = mainTitle ? "h2" : "h4";
@@ -39,8 +37,8 @@ const ArtistCard: FC<Props> = ({
         >
           <div className="flex flex-grow w-full lg:w-fit">
             <Image
-              src={image}
-              alt={`${firstName} ${lastName}`}
+              src={profile?.url || ""}
+              alt={`${name} ${lastname}`}
               width={450}
               height={250}
               className="h-80 flex-grow object-cover lg:rounded-l-3xl"
@@ -49,20 +47,11 @@ const ArtistCard: FC<Props> = ({
           <RowComponent className="flex flex-col items-center justify-center gap-5 text-center my-3 lg:items-start lg:text-start lg:w-2/3">
             <Title
               className={`${tertiaryTitle} capitalize text-primary-pink`}
-            >{`${firstName} ${lastName}`}</Title>
+            >{`${name} ${lastname}`}</Title>
             <p className="text-xl">{biography}</p>
             <div className="flex flex-wrap gap-5">
-              {styles.map((id) => {
-                const style = findOnArray(stylesDevelopment, {
-                  property: "id",
-                  value: id,
-                });
-
-                return (
-                  style && (
-                    <StyleSmallCard key={style.id} styleName={style.name} />
-                  )
-                );
+              {styles.map(({ id, name }) => {
+                return <StyleSmallCard key={id} styleName={name} />;
               })}
             </div>
           </RowComponent>

@@ -1,8 +1,8 @@
 "use client";
 
 import type { LoginContent } from "@/content/functions/types";
-import { emailPattern } from "@/utils";
-import type { InputConfig } from "@nico2433/custom-inputs";
+import { emailPattern, passwordPattern } from "@/utils";
+import type { InputConfig } from "@nico2433/custom-components";
 import { useForm } from "react-hook-form";
 
 const useLoginConfig = (
@@ -44,6 +44,10 @@ const useLoginConfig = (
       type: "password",
       rules: {
         required: errorsContent.required,
+        pattern: {
+          value: passwordPattern,
+          message: errorsContent.invalidPassword,
+        },
         minLength: {
           value: 6,
           message: lengthMessage("min", 6),

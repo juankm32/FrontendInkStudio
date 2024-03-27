@@ -25,9 +25,13 @@ export const getData = async <T>(
 
     if (status) {
       const errorMessage = `Error ${error.status}: ${error.message}`;
-      throw new FetchError(errorMessage, getFetchStatus(status));
+      throw new FetchError(
+        errorMessage,
+        error.response?.data,
+        getFetchStatus(status)
+      );
     }
 
-    throw new FetchError(error.message);
+    throw new FetchError(error.message, error.response?.data);
   }
 };

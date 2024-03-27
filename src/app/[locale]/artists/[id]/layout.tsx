@@ -2,10 +2,13 @@ import ArtistCard from "@/components/cards/ArtistCard";
 import ArtistNavBar from "@/components/pages/artist/ArtistNavBar";
 import DocDelimiter from "@/components/ui/DocDelimiter";
 import { getArtistContent } from "@/content/functions/artist";
-import { usersDevelopment } from "@/development";
-import { findOnArray } from "@/lib";
-import { useTranslations } from "next-intl";
+import { urls } from "@/settings";
+import type { UserSchema } from "@/settings/@types";
+import { getData } from "@/utils";
+import { getTranslations } from "next-intl/server";
 import type { FC } from "react";
+
+const { api } = urls;
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -15,17 +18,17 @@ interface LayoutProps {
   };
 }
 
-const ArtistLayout: FC<LayoutProps> = ({
+const ArtistLayout: FC<LayoutProps> = async ({
   children,
   params: { locale, id },
 }) => {
-  const artist = findOnArray(usersDevelopment, {
-    property: "id",
-    value: id,
-  });
+  const artist =
+    (await getData<UserSchema>(`${api.base}${api.users.base}/${id}`).catch(
+      console.error
+    )) || null;
 
   const artistContent = getArtistContent(
-    useTranslations("artist.page"),
+    await getTranslations("artist.page"),
     locale
   );
 

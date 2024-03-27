@@ -18,7 +18,7 @@ import {
 } from "@/utils";
 import { FETCH_STATUS, handleStatusMessage } from "@/utils/dataFetch/status";
 import type { StatusMessages } from "@/utils/dataFetch/types";
-import { DateInput, TextInput } from "@nico2433/custom-inputs";
+import { DateInput, TextInput } from "@nico2433/custom-components";
 import { useState, type FC } from "react";
 import type { FieldValues } from "react-hook-form";
 import useRegisterConfig from "./useRegisterConfig";
@@ -48,7 +48,7 @@ const RegisterForm: FC<Props> = ({ content }) => {
       name: values.firstName,
       lastname: values.lastName,
       email: values.email,
-      birthday: values.birthDate,
+      birthdate: values.birthDate,
       phone: values.telephone,
       password: values.password,
     };
@@ -81,7 +81,7 @@ const RegisterForm: FC<Props> = ({ content }) => {
                 register={register}
                 errors={errors}
                 className="text-center col-span-2 uppercase font-bold w-full"
-                inputClassName="p-2 bg-gray-200 rounded-md w-full text-black"
+                inputClass="p-2 bg-gray-200 rounded-md w-full text-black"
               />
             ) : (
               <TextInput
@@ -90,7 +90,7 @@ const RegisterForm: FC<Props> = ({ content }) => {
                 register={register}
                 errors={errors}
                 className="text-center uppercase font-bold w-full"
-                inputClassName="p-2 bg-gray-200 rounded-md w-full text-black"
+                inputClass="p-2 bg-gray-200 rounded-md w-full text-black"
               />
             );
           })}

@@ -3,7 +3,7 @@
 import type { RegisterContent } from "@/content/functions/types";
 import { yearsToMs } from "@/lib";
 import { emailPattern, numbersPattern, passwordPattern } from "@/utils";
-import type { InputConfig } from "@nico2433/custom-inputs";
+import type { InputConfig } from "@nico2433/custom-components";
 import { useForm } from "react-hook-form";
 
 const useRegisterConfig = (

@@ -1,16 +1,12 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import AdminCard from "@/components/cards/adminCard";
+import CalendarIcon from "@/components/icons/CalendarIcon";
+import PlusCircleIcon from "@/components/icons/PlusCircleIcon";
+import ReportIcon from "@/components/icons/ReportIcon";
+import GoogleMap from "@/components/ui/GoogleMap";
+import Separator from "@/components/ui/Separator";
 import type { NextPage } from "next";
 import type { ContactContent } from "../../../content/functions/types";
-import GoogleMap from "@/components/ui/GoogleMap";
-import { transparentBg } from "@/utils";
-import Separator from "@/components/ui/Separator";
-import GradientBorder from "@/components/ui/GradientBorder";
-import AdminCard from "@/components/cards/adminCard";
-import LocationIcon from "@/components/icons/LocationIcon";
-import CalendarIcon from "@/components/icons/CalendarIcon";
-import ReportIcon from "@/components/icons/ReportIcon";
-import PlusCircleIcon from "@/components/icons/PlusCircleIcon";
 
 const AdminPage: NextPage = () => {
   const contactContent: ContactContent = {
@@ -93,16 +89,14 @@ const AdminPage: NextPage = () => {
               <AdminCard
                 title="AGENDA DEL DIA"
                 Icon={() => <CalendarIcon fill="#0487D9" className="" />}
-                className="w-1/2 mr-2 mb-4 mt-8" 
-              >
-              </AdminCard>
+                className="w-1/2 mr-2 mb-4 mt-8"
+              ></AdminCard>
 
               <AdminCard
                 title="AGENDA DE LA SEMANA"
                 Icon={() => <CalendarIcon fill="#0487D9" className="" />}
-                className="w-1/2 ml-2 mb-4 mt-8" 
-              >
-              </AdminCard>
+                className="w-1/2 ml-2 mb-4 mt-8"
+              ></AdminCard>
             </div>
 
             <div className="flex flex-col flex-wrap justify-center w-full">
@@ -110,22 +104,19 @@ const AdminPage: NextPage = () => {
                 title="REPORTES"
                 Icon={() => <ReportIcon fill="#0487D9" className="" />}
                 className="mb-4"
-              >
-              </AdminCard>
+              ></AdminCard>
 
               <AdminCard
                 title="AGREGAR ARTISTA"
                 Icon={() => <PlusCircleIcon fill="#0487D9" className="" />}
                 className="mb-4 mt-8"
-              >
-              </AdminCard>
+              ></AdminCard>
 
               <AdminCard
                 title="AGREGAR PUBLICACION"
                 Icon={() => <PlusCircleIcon fill="#0487D9" className="" />}
                 className="mb-4 mt-8"
-              >
-              </AdminCard>
+              ></AdminCard>
             </div>
           </div>
         </div>

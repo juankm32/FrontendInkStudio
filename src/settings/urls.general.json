@@ -1,0 +1,29 @@
+{
+  "api": {
+    "auth": {
+      "base": "/authentications",
+      "register": "/register",
+      "login": "/login"
+    },
+    "users": {
+      "base": "/users",
+      "byToken": "/get-token",
+      "designers": "/designers",
+      "clients": "/clients"
+    },
+    "tattoos": {
+      "base": "/tattoos",
+      "byStyle": "/styles",
+      "byUser": "/users",
+      "byBodyPart": "/body-parts",
+      "unconfirmed": "/unconfirmed",
+      "confirmed": "/confirmed"
+    },
+    "styles": {
+      "base": "/styles"
+    },
+    "bodyParts": {
+      "base": "/body-parts"
+    }
+  }
+}

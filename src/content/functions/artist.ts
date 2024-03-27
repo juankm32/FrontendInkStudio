@@ -16,9 +16,12 @@ export const getArtistContent: GetContentFc<ArtistContent> = (
       label: internFc("nav.gallery"),
     },
     {
-      id: "scheduleAppointment",
-      href: { start: `/${locale}/artists`, end: "appointment" },
+      id: "appointment",
+      href: { start: `/${locale}/`, end: "appointment" },
       label: internFc("nav.scheduleAppointment"),
     },
   ],
+  publication: {
+    by: internFc("publication.by"),
+  },
 });

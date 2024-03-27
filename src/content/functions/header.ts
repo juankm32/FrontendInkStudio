@@ -18,17 +18,17 @@ export const getHeaderContent: GetContentFc<HeaderContent> = (
       },
       {
         id: "myAccount",
-        href: `/${locale}/studio/myAccount`,
+        href: `/${locale}/admin/menu/myAccount`,
         label: internFc("buttons.myAccount"),
       },
       {
         id: "myStudio",
-        href: `/${locale}/studio/myStudio`,
+        href: `/${locale}//admin/menu/myStudio`,
         label: internFc("buttons.myStudio"),
       },
       {
         id: "artists",
-        href: `/${locale}/studio/artists`,
+        href: `/${locale}/admin/artist`,
         label: internFc("buttons.artists"),
       },
       {
@@ -38,7 +38,7 @@ export const getHeaderContent: GetContentFc<HeaderContent> = (
       },
       {
         id: "categories",
-        href: `/${locale}/studio/categories`,
+        href: `/${locale}/admin/categories`,
         label: internFc("buttons.categories"),
       },
       {

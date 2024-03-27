@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import type { FC } from "react";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import DownIcon from "../icons/DownIcon";
 import UpIcon from "../icons/UpIcon";
 import GradientBorder from "../ui/GradientBorder";
@@ -24,6 +24,23 @@ const FilterDropdown: FC<Props> = ({
   borderClassName,
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const dropDownRef = useRef<HTMLDivElement>(null);
+
+  const handleClickOutside = (event: Event) => {
+    if (
+      dropDownRef.current &&
+      !dropDownRef.current.contains(event.target as Node)
+    ) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -43,7 +60,10 @@ const FilterDropdown: FC<Props> = ({
   );
 
   return (
-    <div className="flex flex-col items-center justify-center relative">
+    <div
+      className="flex flex-col items-center justify-center relative"
+      ref={dropDownRef}
+    >
       <GradientBorder
         as="button"
         onClick={() => setIsOpen((prev) => !prev)}
@@ -62,14 +82,14 @@ const FilterDropdown: FC<Props> = ({
       <nav
         className={`${
           isOpen ? "flex" : "hidden"
-        } animate-fadeInDown flex-col absolute mt-5 top-full w-40 gap-3 py-2 bg-primary-active rounded-xl z-10`}
+        } custom-scroll animate-fadeInDown flex-col absolute mt-5 min-w-44 top-full gap-3 py-2 bg-primary-active rounded-xl z-10 overflow-y-auto h-52`}
       >
-        {items.map(({ label, id, value }) => (
+        {items.map(({ label, id, value }, idx) => (
           <Link
+            key={`${id}${idx}`}
             scroll={false}
-            key={id}
             href={`${pathname}?${createQueryString(id, value)}`}
-            className="text-center capitalize"
+            className="text-center capitalize hover:opacity-50"
           >
             {label}
           </Link>

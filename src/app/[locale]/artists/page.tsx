@@ -1,21 +1,29 @@
 import ArtistCard from "@/components/cards/ArtistCard";
 import DocDelimiter from "@/components/ui/DocDelimiter";
 import { getArtistsContent } from "@/content/functions/artists";
-import { usersDevelopment } from "@/development";
-import { mainTitleAdapt, transparentBg } from "@/utils";
-import { useTranslations } from "next-intl";
+import { urls } from "@/settings";
+import type { UserSchema } from "@/settings/@types";
+import { getData, mainTitleAdapt, transparentBg } from "@/utils";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import type { FC } from "react";
+
+const { api } = urls;
 
 interface Props {
   params: { locale: string };
 }
 
-const ArtistsPage: FC<Props> = ({ params: { locale } }) => {
+const ArtistsPage: FC<Props> = async ({ params: { locale } }) => {
   const artistsContent = getArtistsContent(
-    useTranslations("artists.page"),
+    await getTranslations("artists.page"),
     locale
   );
+
+  const artists =
+    (await getData<UserSchema[]>(
+      `${api.base}${api.users.base}${api.users.designers}`
+    ).catch(console.error)) || [];
 
   return (
     <main className="flex flex-col items-center min-h-screen mb-20 gap-20">
@@ -36,7 +44,7 @@ const ArtistsPage: FC<Props> = ({ params: { locale } }) => {
         </div>
       </div>
       <DocDelimiter as="section" containerClassName="flex flex-col gap-10">
-        {usersDevelopment.map((user) => (
+        {artists.map((user) => (
           <ArtistCard key={user.id} artist={user} hover />
         ))}
       </DocDelimiter>

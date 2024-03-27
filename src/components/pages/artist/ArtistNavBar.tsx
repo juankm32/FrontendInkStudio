@@ -22,11 +22,12 @@ const ArtistNavBar: FC<Props> = ({ content, id }) => {
         <nav className="w-full flex gap-5 text-center overflow-x-auto lg:justify-around">
           {content.map(({ id: navId, href, label }) => {
             const url = `${href.start}/${id}${href.end ? `/${href.end}` : ""}`;
+            const urlAppoint = `${href.start}${href.end}?artist=${id}`;
 
             return (
               <Link
                 key={navId}
-                href={url}
+                href={navId === "appointment" ? urlAppoint : url}
                 className={`${fourthTitle} ${
                   url === pathname ? "text-primary-accent" : ""
                 } uppercase`}

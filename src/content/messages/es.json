@@ -76,7 +76,7 @@
           "unknownError": "Se produjo un error, por favor inténtelo mas tarde",
           "required": "Este campo es requerido",
           "invalidEmail": "Email no valido",
-          "invalidPassword": "Contraseña debe incluir caracteres especiales",
+          "invalidPassword": "Contraseña debe incluir un carácter especial, un numero y una letra",
           "minLength": {
             "start": "Debe tener un mínimo de",
             "end": "caracteres"
@@ -117,7 +117,7 @@
           "required": "Este campo es requerido",
           "invalidEmail": "Email no valido",
           "invalidDate": "Fecha no valida",
-          "invalidPassword": "Contraseña debe incluir caracteres especiales",
+          "invalidPassword": "Contraseña debe incluir un carácter especial, un numero y una letra",
           "invalidPasswords": "Las contraseñas no coinciden",
           "invalidTelephone": "Numero de teléfono invalido",
           "notOldEnough": "No tienes suficiente edad",
@@ -180,6 +180,9 @@
           "arms": "Brazos",
           "legs": "Piernas"
         }
+      },
+      "modal": {
+        "by": "Por"
       }
     }
   },
@@ -189,6 +192,9 @@
         "publications": "Publicaciones",
         "gallery": "Galería",
         "scheduleAppointment": "Agendar cita"
+      },
+      "publication": {
+        "by": "Por"
       }
     }
   },
@@ -217,6 +223,32 @@
     "page": {
       "title": "FAQS",
       "content": "Aquí puedes encontrar información de FAQS"
+    }
+  },
+  "appointment": {
+    "metadata": {
+      "title": "Reserva"
+    },
+    "page": {
+      "title": "Reserva",
+      "steps": {
+        "service": "Servicio",
+        "style": "Estilo",
+        "artist": "Artista",
+        "date": "Fecha",
+        "hour": "Hora",
+        "reserve": "Reserva"
+      },
+      "form": {
+        "fields": {
+          "service": {
+            "design": "Diseño con artista",
+            "session": "Sesión con artista",
+            "moreInfo": "Mas información sobre la reserva"
+          },
+          "submit": "Reservar"
+        }
+      }
     }
   }
 }

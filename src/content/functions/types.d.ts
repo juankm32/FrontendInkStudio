@@ -55,7 +55,6 @@ export interface ContactContent {
   };
 }
 
-
 export interface HomeContent {
   carrousel: {
     description: {
@@ -147,8 +146,10 @@ export interface ArtistsContent {
 
 export interface ArtistContent {
   nav: { id: string; href: { start: string; end?: string }; label: string }[];
+  publication: {
+    by: string;
+  };
 }
-
 
 export interface GalleryContent {
   title: string;
@@ -164,5 +165,22 @@ export interface GalleryContent {
       title: string;
       content: { name: string; label: string }[];
     };
+  };
+  modal: {
+    by: string;
+  };
+}
+
+export interface AppointmentContent {
+  title: string;
+  steps: { id: string; label: string }[];
+  form: {
+    fields: {
+      service: {
+        content: { id: string; label: string }[];
+        moreInfo: string;
+      };
+    };
+    submit: string;
   };
 }

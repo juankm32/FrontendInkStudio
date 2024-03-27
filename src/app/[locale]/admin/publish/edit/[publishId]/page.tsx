@@ -1,23 +1,11 @@
 "use client";
 import GradientBorder from "@/components/ui/GradientBorder";
-import {
-  useEffect,
-  type FC,
-  Key,
-  useState,
-  SetStateAction,
-  ChangeEvent,
-} from "react";
+import type { ChangeEvent } from "react";
+import { useState, type FC } from "react";
 
 const fileTypes = ["JPG", "PNG"];
 
-type Props = {
-  children: React.ReactNode;
-  onClose: () => void;
-  success: boolean;
-};
-
-const EditPublish: FC<Props> = ({ children, onClose }) => {
+const EditPublish: FC = () => {
   const [cover, setCover] = useState<File | null>(null);
   const [images, setImages] = useState<File[]>([]);
 
@@ -44,11 +32,7 @@ const EditPublish: FC<Props> = ({ children, onClose }) => {
 
       return (
         <div key={index} className="preview">
-          <img
-            src={objectUrl}
-            alt={`Preview ${index}`}
-            onLoad={onImageLoad}
-          />
+          <img src={objectUrl} alt={`Preview ${index}`} onLoad={onImageLoad} />
         </div>
       );
     });
@@ -154,20 +138,19 @@ const EditPublish: FC<Props> = ({ children, onClose }) => {
                 ></select>
               </div>
               <div className="w-1/2 ml-2">
-              <label
-                htmlFor="bodyPart"
-                className="block text-blue-200 text-sm font-bold mb-2 mt-3"
-              >
-                Parte del cuerpo
-              </label>
-              <select
-                id="bodyPart"
-                name="bodyPart"
-                className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500
+                <label
+                  htmlFor="bodyPart"
+                  className="block text-blue-200 text-sm font-bold mb-2 mt-3"
+                >
+                  Parte del cuerpo
+                </label>
+                <select
+                  id="bodyPart"
+                  name="bodyPart"
+                  className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500
 "
-              ></select>
+                ></select>
               </div>
-
             </div>
 
             <div className="flex mt-8 justify-center">

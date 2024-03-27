@@ -28,4 +28,7 @@ export const getGalleryContent: GetContentFc<GalleryContent> = (internFc) => ({
       ],
     },
   },
+  modal: {
+    by: internFc("modal.by"),
+  },
 });
