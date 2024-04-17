@@ -1,6 +1,6 @@
 {
   "domain": "https://proyecto-integrador2-alpha.vercel.app",
   "api": {
-    "base": "http://34.229.160.230:8080/api/v1"
+    "base": "http://54.162.122.130:8080/api/v1"
   }
 }
